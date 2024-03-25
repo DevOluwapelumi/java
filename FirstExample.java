@@ -6,7 +6,7 @@
 //     }
 // }
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 // public class FirstExample{
 //   public static void main(String[] args){
@@ -16,6 +16,8 @@ import java.util.Scanner;
 //     System.out.println(newScore);
 //   }
 // }
+
+
 
 //  public class FirstExample{
 //    public static void main(String[] args){
@@ -49,17 +51,112 @@ import java.util.Scanner;
 //         System.out.println("Your first name is "+fname);
 //    }}
 
-    public class FirstExample{
-   public static void main(String[] args){
-        System.out.println(Math.abs(-50.0));
-        System.out.println(Math.min(70, 30));
-        System.out.println(Math.max(70.5, 30));
-        System.out.println(Math.sqrt(25));
-        System.out.println(Math.pow(50.0, 3.0));
-        System.out.println(Math.E);
-        System.out.println(Math.PI);
-        System.out.println(Math.TAU);
-        System.out.println(Math.addExact(40, 34));
-        System.out.println(Math.round(56.435334343));
-        System.out.println(Math.floorDiv(45, 21));
-   }}
+
+
+//     public class FirstExample{
+//    public static void main(String[] args){
+//         System.out.println(Math.abs(-50.0));
+//         System.out.println(Math.min(70, 30));
+//         System.out.println(Math.max(70.5, 30));
+//         System.out.println(Math.sqrt(25));
+//         System.out.println(Math.pow(50.0, 3.0));
+//         System.out.println(Math.E);
+//         System.out.println(Math.PI);
+//         System.out.println(Math.TAU);
+//         System.out.println(Math.addExact(40, 34));
+//         System.out.println(Math.round(56.435334343));
+//         System.out.println(Math.floorDiv(45, 21));
+//    }}
+
+
+//    JAVA ARRAY CLASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS   //
+
+//      public class FirstExample{
+//           public static void main(String[] args){
+//      String[] name;
+//      String[] name2 = new String[5];
+//      String[] name3 = {"Oluwapelumi", "Victor", "Sunday"};
+//      name2[0] = "Oluwapelumi";
+//      name2[2] = "Victor";
+//      name2[4] = "Sunday";
+//      System.out.println(name2[0]);
+//      name3[1] = "Jimoh";
+//  }}
+
+     // public class FirstExample{
+     //      public static void main(String[] args){
+     // String[][] values = new String[3][3];
+     // values[1][2] = "Micheal";
+     // values[0][0] = "John";
+     // int[][] val = {{1, 2, 3, 4, 5}, {3, 5, 7, 8, 9}, {4, 0, 2,7, 3}};
+     // System.out.println(val[1][2]);
+     // }}
+
+     // JAVA SWITCH CASE STATEMENTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+import java.util.Scanner;
+
+// public class FirstExample {
+//     public static void main(String[] args) {
+//         int day = 3;
+//         String dayString;
+
+//         switch (day) {
+//             case 1:
+//                 dayString = "Monday";
+//                 break;
+//             case 2:
+//                 dayString = "Tuesday";
+//                 break;
+//             case 3:
+//                 dayString = "Wednesday";
+//                 break;
+//             case 4:
+//                 dayString = "Thursday";
+//                 break;
+//             case 5:
+//                 dayString = "Friday";
+//                 break;
+//             case 6:
+//                 dayString = "Saturday";
+//                 break;
+//             case 7:
+//                 dayString = "Sunday";
+//                 break;
+//             default:
+//                 dayString = "Invalid day";
+//                 break;
+//         }
+
+//         System.out.println("The day is: " + dayString);
+//     }
+// }
+
+
+    public class FirstExample {
+    static Scanner na = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        char option;
+        System.out.print("The current president of Nigeria is ___ (a) Buhari (b) Tinubu (c) Jonathan (d) Obasanjo: ");
+        option = na.next().charAt(0);
+
+        switch (option) {
+            case 'a':
+                System.out.println("You missed, it's not Buhari");
+                break;
+            case 'b':
+                System.out.println("Congratulations, you are correct");
+                break;
+            case 'c':
+                System.out.println("You missed, it's not Jonathan");
+                break;
+            case 'd':
+                System.out.println("You missed, it's not Obasanjo");
+                break;
+            default:
+                System.out.println("Invalid option entered");
+                break;
+        }
+    }
+}
+
