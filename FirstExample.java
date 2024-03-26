@@ -132,31 +132,93 @@ import java.util.Scanner;
 // }
 
 
+//     public class FirstExample {
+//     static Scanner na = new Scanner(System.in);
+
+//     public static void main(String[] args) {
+//         char option;
+//         System.out.print("The current president of Nigeria is ___ (a) Buhari (b) Tinubu (c) Jonathan (d) Obasanjo: ");
+//         option = na.next().charAt(0);
+
+//         switch (option) {
+//             case 'a':
+//                 System.out.println("You missed, it's not Buhari");
+//                 break;
+//             case 'b':
+//                 System.out.println("Congratulations, you are correct");
+//                 break;
+//             case 'c':
+//                 System.out.println("You missed, it's not Jonathan");
+//                 break;
+//             case 'd':
+//                 System.out.println("You missed, it's not Obasanjo");
+//                 break;
+//             default:
+//                 System.out.println("Invalid option entered");
+//                 break;
+//         }
+//     }
+// }
+
+
+    
+        // JAVA METHODSsasssssssssssssssssssssssssssssssssssss
+
+    // Method Definition e.g public ststic void myMethod(){} or public int myMethod(int a){}
+    // Method Declaration e.g. {System.out.println("This is a Java class")}
+    // Method Invocation e.g. myMethod() of myMethod(5)
+
+    //  Parametized Method
+
+    // import java.util.Scanner;
+    // public class FirstExample {
+    //     static Scanner na = new Scanner(System.in);
+
+    //     public static void displayName(){
+    //         System.out.println("Please enter your name");
+    //         String name = na.nextLine();
+    //         System.out.println("My name is "+name);
+    //     }
+
+    //     public static void main(String[] args){
+    //         displayName();
+    //     }
+    // }
+
+
+    import java.util.Scanner;
     public class FirstExample {
-    static Scanner na = new Scanner(System.in);
+        static Scanner na = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        char option;
-        System.out.print("The current president of Nigeria is ___ (a) Buhari (b) Tinubu (c) Jonathan (d) Obasanjo: ");
-        option = na.next().charAt(0);
-
-        switch (option) {
-            case 'a':
-                System.out.println("You missed, it's not Buhari");
-                break;
-            case 'b':
-                System.out.println("Congratulations, you are correct");
-                break;
-            case 'c':
-                System.out.println("You missed, it's not Jonathan");
-                break;
-            case 'd':
-                System.out.println("You missed, it's not Obasanjo");
-                break;
-            default:
-                System.out.println("Invalid option entered");
-                break;
+        public static void startApp(){
+            System.out.println("Press \n 1. Start application\n 2. quit application");
         }
-    }
-}
 
+        public static void algebra(){
+            double result = 45.3 + subtract();
+            System.out.println("Welcome "+ myName()+" your total value is "+result);
+        }
+
+        public static String myName(){
+            System.out.println("Enter your name>");
+            String name = na.nextLine();
+            return name;
+        }
+
+        public static int addition(int a, int b){
+            int result = a + b;
+            return result;
+        }
+
+        public static double subtract(){
+            double va = 50;
+            double va2 = 20;
+            int add = addition(5, 10);
+            double result = va - va2 * add;
+            return result;
+        }
+
+        public static void main(String[] args){
+            startApp();
+        }
+        }

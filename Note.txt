@@ -28,4 +28,13 @@ Bitwise : &, |, ~
 Variable is like a container for data use
 
 
+     1   create a cbt app 10 QUESTION
+        user register first
+        ask how many student to do the cbt
+        ask for name and details of the students
+        the person with the highest mark will be given message of congratulation
+
+       preess 2 for calcuator
+
+       press 3 to quit
 
