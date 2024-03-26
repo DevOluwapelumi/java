@@ -187,38 +187,49 @@ import java.util.Scanner;
 
 
     import java.util.Scanner;
+
     public class FirstExample {
         static Scanner na = new Scanner(System.in);
-
-        public static void startApp(){
+    
+        public static void startApp() {
             System.out.println("Press \n 1. Start application\n 2. quit application");
+            int option = Integer.parseInt(na.nextLine());
+            if (option == 1) {
+                algebra();
+            } else if (option == 2) {
+                System.exit(0);
+            } else {
+                System.out.println("Invalid option selected");
+                startApp();
+            }
         }
-
-        public static void algebra(){
+    
+        public static void algebra() {
             double result = 45.3 + subtract();
-            System.out.println("Welcome "+ myName()+" your total value is "+result);
+            System.out.println("Welcome " + myName() + ", your total value is " + result);
         }
-
-        public static String myName(){
-            System.out.println("Enter your name>");
+    
+        public static String myName() {
+            System.out.println("Enter your name: ");
             String name = na.nextLine();
             return name;
         }
-
-        public static int addition(int a, int b){
+    
+        public static int addition(int a, int b) {
             int result = a + b;
             return result;
         }
-
-        public static double subtract(){
+    
+        public static double subtract() {
             double va = 50;
             double va2 = 20;
             int add = addition(5, 10);
             double result = va - va2 * add;
             return result;
         }
-
-        public static void main(String[] args){
+    
+        public static void main(String[] args) {
             startApp();
         }
-        }
+    }
+        
