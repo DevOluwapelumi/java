@@ -250,8 +250,8 @@ import java.util.Scanner;
     
         public static void main(String[] args){}
     }
-    
-    public class encapsulation {
+                    //    encapsulation     //
+    public class FirstExample {
         public static void main(String[] args){
             Example ex = new Example();
             ex.setName("jinad");
