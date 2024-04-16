@@ -28,13 +28,29 @@ Bitwise : &, |, ~
 Variable is like a container for data use
 
 
-     1   create a cbt app 10 QUESTION
-        user register first
-        ask how many student to do the cbt
-        ask for name and details of the students
-        the person with the highest mark will be given message of congratulation
+    Java Modifier
+  Access Modifier - controls the access Level
+  Non-Access Modifier - do not controls access level but provides other functionalities
 
-       preess 2 for calcuator
+    Access Modifier for class
+  -public - can accessed by any other classes
+  -default - can accessed by other classes in the same package
 
-       press 3 to quit
+    Access Modifier for Constructors, Attributes, Methods
+  -public
+  -private
+  -default
+  -protected
+
+    Non-Access modifier for classes
+  -final
+  -Abstract
+
+    Non-Access Methods and Attributes
+  -final
+  -static
+  -abstract
+  -transient
+  -synchronized
+  -volatile
 
