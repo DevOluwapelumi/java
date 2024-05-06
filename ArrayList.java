@@ -1,9 +1,9 @@
     // JAVA ArrayList //
-import java.util.ArrayList;
+import java.util.ArrayLists;
 
-Public class ArrayList{
+public class ArrayList{
     public static void main(String[] args){
-        ArrayList<String> name_of_students = new ArrayList<String>();
+        ArrayLists<String> name_of_students = new ArrayLists<String>();
         name_of_students.add("Oluwapelumi");
         name_of_students.add("Micheal");
         name_of_students.add("Esther");
