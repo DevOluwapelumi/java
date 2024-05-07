@@ -25,5 +25,17 @@ public class Hash_Map {
         for (String course : courseInstructor.keySet()) {
             System.out.println("Course: " + course + " Instructor: " + courseInstructor.get(course));
         }
+        // System.out.println(course_instructor);
+
+        HashMap<String, Integer> inst_age = new HashMap<String, Integer>();
+        inst_age.put("Yemi", 28);
+        inst_age.put("Blessing", 34);
+        inst_age.put("Titilayo", 35);
+
+
+        HashMap<String, Boolean> inst_status = new HashMap<String, Boolean>();
+        inst_status.put("Yemi", true);
+        inst_status.put("Blessing", false);
+
     }
 }
