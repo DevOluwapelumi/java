@@ -24,4 +24,23 @@ public class Reg_Expn {
             System.out.println("No match found in the text");
  }
 }
+    Regular Expression Compile options
+        // Pattern.CASE_INSENSITIVE;
+        // Pattern.LITERA;
+        // Pattern.UNICODE_CASE;
+
+        // Regular Expression Patterns
+        // [afx]
+        // [^afx]
+        // [0-9]
+
+        
+        // Regular Expression Metacharacters
+        // | e.g [afx][abc]
+        // .
+        // ^    ^the
+        // $    class$
+        // \d
+        // \s
+        // \b
 }
