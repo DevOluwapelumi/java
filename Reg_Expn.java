@@ -42,5 +42,32 @@ public class Reg_Expn {
         // $    class$
         // \d
         // \s
-        // \b
+        // \b   \bcopy  paste\b
+
+        // Pattern.CASE_INSENSITIVE;
+    // Pattern.LITERAL;
+    // Pattern.UNICODE_CASE;
+
+    // Some other REGEX pattern
+    // [afx] This will check if any of the character or all the character exist in
+    // the comment.
+    // [^afx] This means that any of the characters doesn't exist in the comment
+    // [0-9]
+
+    // REGREX Metcharacters......
+    // ---> | e.g [afx] | [abc] This is if any of the group exist.
+    // ---> . it will check if at least one instance exist.
+    // ---> ^ If (e.g ^the starts the word.).
+    // ---> $ It check if it is (e.g $the) word that ends the statement.
+    // ---> \d It check if everything a digit or can it find a digit.
+    // ---> \s It check if there is space between.
+    // ---> \b it check if copy ends the statement (\bcopy). and if (paste\b) paste
+    // ends the statement.
+
+    // REGEX QUANTIFIER.....
+    // ---> + e.g age+, it check if it is only once that age appears.
+    // ---> * e.g man*, it check if it doesn't exist or it's more than 1.
+    // ---> ? e.g beat?, it check if it 0 or 1 occurrence.
+    // ---> n{X} 3{man} if man appears up to 3 times.
+    // ---> n{X, Y} 3{me, two} if me and two appears more than 3 times.
 }
