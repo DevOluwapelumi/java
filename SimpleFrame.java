@@ -21,7 +21,13 @@ public class SimpleFrame implements ActionListener{
         frame.add(label);
 
         JButton but = new JButton("Welcome User!");
-        but.addActionListener(this);
+        // but.addActionListener(this);
+        but.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent ae){
+            label.setText("<html><span style='color: blue; font-size: 16px; font-family: Arial;'>Mr. Oluwapelumi, This is GUI Class</span></html>");
+            }
+        });
         frame.add(but);
 
 
@@ -30,14 +36,14 @@ public class SimpleFrame implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent evt){
-        if(state){
-            label.setText("<html><span style='color: blue; font-size: 16px; font-family: Arial;'>Mr. Oluwapelumi, Kindly Login Here!!!</span></html>");
-            state = false;
-        }
-        else{
-            label.setText("<html><span style='color: blue; font-size: 16px; font-family: Arial;'>Mr. Oluwapelumi, This is GUI Class</span></html>");
-            state = true;
-        }
+        // if(state){
+        //     label.setText("<html><span style='color: blue; font-size: 16px; font-family: Arial;'>Mr. Oluwapelumi, Kindly Login Here!!!</span></html>");
+        //     state = false;
+        // }
+        // else{
+        //     label.setText("<html><span style='color: blue; font-size: 16px; font-family: Arial;'>Mr. Oluwapelumi, This is GUI Class</span></html>");
+        //     state = true;
+        // }
     }
 
     public static void main(String[]args){
