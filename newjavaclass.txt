@@ -1,0 +1,80 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Scanner;
+import java.io.FileReader;
+
+public class Editor implements ActionListener {
+    JFrame frame;
+    JTextArea area;
+    JMenu fileMenu;
+    JMenuItem newPage;
+    int count;
+
+    public Editor() {
+        frame = new JFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLocation(new Point(400, 100));
+        frame.setSize(new Dimension(500, 300));
+        frame.setTitle("Text Editor");
+        frame.setIconImage(Toolkit.getDefaultToolkit().getImage("1695711686865.jpg"));
+        frame.setLayout(new BorderLayout());
+
+        area = new JTextArea(25, 50);
+        area.setFont(new Font("Serif", Font.BOLD, 14));
+        frame.add(new JScrollPane(area));
+
+        JMenuBar menuContainer = new JMenuBar();
+        fileMenu = new JMenu("File");
+
+        newPage = new JMenuItem("New", 'N');
+        newPage.setAccelerator(KeyStroke.getKeyStroke('N', Toolkit.getDefaultToolkit().getMenuShortcutKeyMask(), false));
+        newPage.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                count += 1;
+                area.setText("");
+            }
+        });
+
+        JMenuItem openMenu = new JMenuItem("Open", 'O');
+        openMenu.setAccelerator(KeyStroke.getKeyStroke('O', Toolkit.getDefaultToolkit().getMenuShortcutKeyMask(), false));
+        openMenu.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                JFileChooser fopen = new JFileChooser();
+                int option = fopen.showOpenDialog(frame);
+                if (option == JFileChooser.APPROVE_OPTION) {
+                    area.setText("");
+                    try {
+                        Scanner scan = new Scanner(new FileReader(fopen.getSelectedFile().getPath()));
+                        while (scan.hasNext()) {
+                            area.append(scan.nextLine() + "\n");
+                        }
+                        frame.setTitle(fopen.getSelectedFile().getPath() + " - Editor");
+                    } catch (Exception ex) {
+                        JOptionPane.showMessageDialog(null, ex.getMessage());
+                    }
+                }
+            }
+        });
+
+        fileMenu.add(newPage);
+        fileMenu.add(openMenu);
+        menuContainer.add(fileMenu);
+
+        frame.setJMenuBar(menuContainer);
+
+        frame.pack();
+        frame.setVisible(true);
+    }
+
+    public void actionPerformed(ActionEvent ae) {
+        // Empty actionPerformed method as no specific actions are defined for the Editor class itself.
+    }
+
+    public static void main(String[] args) {
+        new Editor();
+    }
+}

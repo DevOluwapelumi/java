@@ -15,7 +15,6 @@ public class SimpleFrame implements ActionListener{
         frame.setLocation(new Point(500, 200));
         frame.setTitle("SimpleFrame");
         frame.setIconImage(Toolkit.getDefaultToolkit().getImage("1695711686865.jpg"));
-
         frame.setLayout(new FlowLayout());
         label = new JLabel("<html><span style='color: blue; font-size: 16px; font-family: Arial;'>Hello, Oluwapelumi! Welcome to Java GUI Class</span></html>");
         frame.add(label);
