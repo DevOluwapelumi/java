@@ -1,5 +1,3 @@
-
-
 import java.awt.*; //diamension
 import javax.swing.*; //for gui 
 import java.awt.event.ActionListener;
